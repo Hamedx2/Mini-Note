@@ -1,0 +1,51 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.logoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: var(--color-accent);
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--color-text-primary);
+}
+
+.signin {
+  gap: 2.4rem;
+}
+
+.signinIcon {
+  color: var(--color-text-primary);
+  font-size: 7.4rem;
+}
+
+.signinName {
+  font-size: 5.2rem;
+}
+
+@media (max-width: 800px) {
+  .logoIcon {
+    font-size: 3rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .logoIcon {
+    font-size: 2.4rem;
+  }
+  .name {
+    font-size: 1.6rem;
+  }
+}

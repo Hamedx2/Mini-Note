@@ -1,0 +1,40 @@
+.formElement {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.input {
+  width: 30rem;
+  height: 3.6rem;
+  border-radius: var(--border-radius-2);
+  border: none;
+  box-shadow: var(--box-shadow-1);
+  padding: 0.6rem;
+  background-color: var(--color-primary-light);
+  transition: all 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 5px 5px rgba(17, 24, 39, 0.5);
+}
+
+.addInput {
+  width: 100%;
+  background-color: var(--color-surface);
+  height: 4rem;
+}
+
+.addInputDiv {
+  width: 100%;
+  align-items: center;
+}

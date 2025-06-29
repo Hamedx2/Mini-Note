@@ -1,0 +1,68 @@
+.footer {
+  background-color: #e6e6e6;
+  width: 100%;
+  position: static;
+  bottom: 0;
+  box-shadow: 0 -3px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.footerContainer {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.4rem;
+  padding: 1.6rem 1.8rem;
+}
+
+.footerLogo {
+  filter: brightness(0);
+}
+
+.footerCopyrightText {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.footerCopySign {
+  font-size: 2rem;
+}
+
+.footerName {
+  font-weight: 600;
+}
+
+.footerContact span {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.footerContactMail:link,
+.footerContainerMail:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #444;
+  font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .footerCopyrightText {
+    font-size: 1rem;
+  }
+  .footerCopySign {
+    font-size: 1.4rem;
+  }
+  .footerContact span {
+    font-size: 1rem;
+  }
+  .footerContactMail:link,
+  .footerContainerMail:visited {
+    font-size: 1rem;
+  }
+  .footerContainer {
+    gap: 1.6rem;
+    max-width: 90%;
+    padding: 1.6rem 0;
+  }
+}

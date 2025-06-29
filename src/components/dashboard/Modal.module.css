@@ -1,0 +1,32 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.container {
+  background-color: var(--color-primary-light);
+  padding: 4.8rem;
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--box-shadow-1);
+  width: 60%;
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  font-size: 5.2rem;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+}

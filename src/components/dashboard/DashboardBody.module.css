@@ -1,0 +1,118 @@
+.body {
+  padding: 6.4rem 4.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  row-gap: 4.8rem;
+  column-gap: 3.2rem;
+}
+
+.add {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.6rem;
+  border-bottom: 2px solid var(--color-gray-light);
+  padding: 4.8rem 0;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.btnContainer {
+  width: 60%;
+}
+
+.formContainer {
+  width: 50%;
+  max-height: 0;
+
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.4s ease;
+}
+
+.showForm {
+  max-height: 80rem;
+  opacity: 1;
+}
+
+.spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.spinner p {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.noNotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  padding-top: 3.6rem;
+}
+
+.noNotes p {
+  color: var(--color-text-primary);
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1550px) {
+  .grid {
+    column-gap: 3rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .formContainer {
+    width: 80%;
+  }
+
+  .grid {
+    column-gap: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .formContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .formContainer {
+    width: 100%;
+  }
+
+  .body {
+    padding: 6.4rem 3rem;
+  }
+}
