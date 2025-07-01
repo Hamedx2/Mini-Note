@@ -6,7 +6,7 @@ import Btn from "../Btn";
 import Logo from "../Logo";
 import { logout } from "../../context/authSlice";
 import { clearNotes } from "../../context/noteSlice";
-import { customToast } from "./CustomToast";
+import { customToast } from "./customToast";
 
 function Navbar() {
   const { email } = useSelector((store) => store.auth);

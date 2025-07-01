@@ -4,7 +4,7 @@ import FormElement from "../FormElement";
 import styles from "./AddForm.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { createNote, editNote } from "../../context/noteSlice";
-import { customToast } from "./CustomToast";
+import { customToast } from "./customToast";
 
 function AddForm({ edit = false, activeNote = null }) {
   const { isLoading } = useSelector((store) => store.notes);

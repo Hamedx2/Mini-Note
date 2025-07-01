@@ -9,7 +9,7 @@ import {
   setActiveNote,
   setEditNote,
 } from "../../context/noteSlice";
-import { customToast } from "./CustomToast";
+import { customToast } from "./customToast";
 
 function NoteCard({ header, date, text, id, user_id }) {
   const dispatch = useDispatch();
