@@ -19,10 +19,13 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 .pages {
   background-color: var(--color-primary-light);
   min-height: 100vh;
-  position: relative;
 }
 
 :root {
